@@ -15,3 +15,16 @@ class car {
     }
 }
 console.log(new car());
+
+//default function
+
+
+function randomNumber(){
+    console.log('Gerando número aleatório...')
+    return Math.random() * 10;
+
+}
+function multiplicar(a, b = randomNumber()){
+    return a * b;
+}
+console.log(multiplicar(5));
